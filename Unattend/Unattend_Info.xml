@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UnattendInfo SectorCompatibility="1.0">
+	<Index XMLFile="SkipOOBEasAdmin.xml" Description="OOBE 건너뛰고 Administrator 계정으로 자동 로그온"/>
+</UnattendInfo>

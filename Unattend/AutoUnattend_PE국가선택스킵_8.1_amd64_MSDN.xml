@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unattend xmlns="urn:schemas-microsoft-com:unattend">
+    <!--
+
+Sample answer file for remotely-controlled computer (headless deployment)
+  1. Edit this answer file to include your information; password, product key, language etc.
+  2. Run setup using the /unattend:answer_file command line parameter where answer_file is the path to the answer file.
+	For example, setup.exe /unattend:\\server\share\unattend.xml
+  3. See the Windows Assessment and Deployment Kit (Windows ADK) for additional guidance.
+
+  NOTE: This answer file will delete all of the data on disk 0.  
+
+-->
+    <settings pass="windowsPE">
+        <component name="Microsoft-Windows-International-Core-WinPE" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <SetupUILanguage>
+                <UILanguage>ko-KR</UILanguage>
+            </SetupUILanguage>
+            <InputLocale></InputLocale>
+            <UILanguage>ko-KR</UILanguage>
+        </component>
+    </settings>
+    <cpi:offlineImage cpi:source="catalog:d:/workspace/unattend/install_windows 8.1 pro.clg" xmlns:cpi="urn:schemas-microsoft-com:cpi" />
+</unattend>
